@@ -1,0 +1,211 @@
+*
+{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+.logo-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+.yellow-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Prevent horizontal scroll */
+}
+
+
+.yellow-img img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+}
+
+
+.deal-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Ensure the deal image is centered */
+}
+
+
+.deal-img img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+.yellow-bg-img
+{ 
+  width: 100%;
+  height: 200px;
+  /* background-color: aqua; */
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw3d439957/images/2024/Home/071024/A_SPOT_BG_DT-min.png');
+}
+
+.yellow-main-img
+{
+  height:114px
+}
+
+@media (min-width:320px) and (max-width:575px)
+{
+  .yellow-bg-img
+{ 
+  height: 150px;
+}
+
+  .yellow-main-img
+{
+  height: 40px;
+}
+}
+
+@media (min-width:576px) and (max-width:767px)
+{
+  .yellow-bg-img
+{ 
+  height: 287px;
+}
+
+  .yellow-main-img
+{
+  height: 75px;
+}
+}
+
+@media (min-width:768px) and (max-width:1024px)
+{
+  .yellow-bg-img
+{ 
+  height: 382px;
+}
+
+  .yellow-main-img
+{
+  height: 100px;
+}
+}
+@media (min-width:1025px) and (max-width:1200px)
+{
+  .yellow-bg-img
+{ 
+  height: 130px;
+}
+
+  .yellow-main-img
+{
+  height: 55px;
+}
+
+}
+
+
+
+/* Jeans Buy One Get One  */
+
+.Jeans-bg
+{
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwc5e174af/images/2024/Home/071024/B_SPOT_JEANSBG_DT-min.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.im-1
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw30d00f59/images/2024/Home/071024/B_SPOT_JEANS%20BOGO_PLACEHOLDER-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.im-2
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw230ab89f/images/2024/Home/071024/B_SPOT_LOWRISE-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.im-3
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw1567981d/images/2024/Home/071024/B_SPOT_EXTENDED-BADGE-DT.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/* Footer */
+
+
+.footer-ul-main
+{
+  font-size: 20px;
+
+}
+
+
+
+
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+footer h5 {
+  margin-bottom: 1rem;
+}
+
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+footer ul li a {
+  display: flex;
+  align-items: center;
+}
+
+
+footer ul li a svg {
+  margin-right: 0.5rem;
+}
+
+
+footer .form-control {
+  border-radius: 0;
+}
+
+
+footer .btn {
+  border-radius: 0;
+}
