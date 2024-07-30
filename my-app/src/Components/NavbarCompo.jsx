@@ -21,6 +21,7 @@ function NavbarCompo() {
               <Nav.Link as={NavLink} to="/jeans">Jeans</Nav.Link>
               <Nav.Link as={NavLink} to="/aero-for-all">Aero For All</Nav.Link>
               <Nav.Link as={NavLink} to="/clearance">Clearance</Nav.Link>
+              
             </Nav>
           <Navbar.Brand as={NavLink}  to="/">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 22" id="logo" style={{ width: '200px', height: 'auto' }}>

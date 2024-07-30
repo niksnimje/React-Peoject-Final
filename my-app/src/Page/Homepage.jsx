@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 // import './App.css'
 
 
@@ -73,7 +74,9 @@ function Homepage() {
          <div className='d-flex flex-column justify-content-center align-items-center h-100' >
           <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw956e2e28/images/2024/Home/071024/A_SPOT_BTS%20DEALS_DT.png"   className='yellow-main-img'    alt="" /> <br />
           <p> 
-          Stock up for less than your favorite latte.</p>
+          Stock up for less than your favorite latte. 
+          </p>
+          
           </div>
          </div>
       </div>
@@ -83,24 +86,26 @@ function Homepage() {
 
     {/* first-img */}
 
-        <div className="container-fluid Jeans-bg p-0 d-flex">
+        <Link to={"/jeans"}>
+        <div className="container-fluid Jeans-bg p-0 d-flex flex-column flex-sm-column flex-md-column flex-lg-row">
           
-            <div className="col-3 p-0 im-1 mt-5">
-              <div className="frist-image-content" style={{marginTop:"70%"}}>
-              <h1>
-              + FREE SHIPPING! </h1>
-              <button >Women</button>
-              </div>
-              
+          <div className="col-12 col-sm-12 col-md-6 col-lg-3 p-0 im-1 mt-5">
+            <div className="frist-image-content text-light text-center" style={{marginTop:"70%"}}> <br /><br />
+            <h1>
+            + FREE SHIPPING! </h1>
+            <button className='btn-women-men ' ><Link to={"/women"} className=' women-btn '>Women</Link> &nbsp;&nbsp;&nbsp;&nbsp; <Link to={"/men"} className='men-btn'>Men</Link> </button>
             </div>
-          
-             <div className="col-5 im-2 bottom-0 position-relative ">
+          </div>
+        
+           <div className="col-12 col-sm-3 col-md-3 col-lg-5 im-2 bottom-0 position-relative img-fluid d-none d-sm-none d-md-none d-lg-block">
 
-             </div>
-             <div className="col-3 im-3">
+           </div>
+           <div className="col-12 col-sm-3 col-md-3 col-lg-1 d-none d-sm-none d-md-none d-lg-block im-3 img-fluid">
 
-             </div>
-        </div>
+           </div>
+      </div>
+        
+        </Link>
 
 
     {/* <div className="container-fluid p-0">

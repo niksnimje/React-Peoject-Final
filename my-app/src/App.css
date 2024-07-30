@@ -12,8 +12,6 @@
 }
 
 
-
-
 .yellow-img {
   position: relative;
   width: 100%;
@@ -110,6 +108,47 @@
 }
 
 
+/* Btn Women Men */
+
+.btn-women-men{
+  background-color: white;
+  color: #000;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+@media (min-width:320px) and (max-width:575px)
+{
+  .btn-women-men{
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+  }
+}
+
+.women-btn
+{
+  color: black;
+  text-decoration: none;
+}
+.women-btn:hover
+{
+  border-bottom: 1px solid  black;
+}
+.men-btn
+{
+  color: black;
+  text-decoration: none;
+}
+.men-btn:hover
+{
+  border-bottom: 1px solid  black;
+}
+
 
 /* Jeans Buy One Get One  */
 
@@ -122,6 +161,21 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width:320px) and (max-width:575px)
+{
+  .Jeans-bg
+{
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwcf3315fb/images/2024/Home/071024/B_SPOT_JEANSBG_M-min.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+}
+
 .im-1
 {
   height: 300px;
@@ -149,6 +203,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 
 
 /* Footer */
