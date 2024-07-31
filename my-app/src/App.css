@@ -228,7 +228,7 @@
 
 .kitty-bg
 {
-  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw7713e973/images/2024/Home/072424/HK%20DT%20HP%20SNEAK%20PEEK%20BG%20DT-min.png ');
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwbcda8db8/images/2024/Home/073124/C-SPOT%20HK%20BG%20DT-min.png ');
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -241,6 +241,7 @@
 {
   height: 300px;
   width: 400px;
+  margin-top: 20%;
   background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw481f733b/images/2024/Home/072424/Hello%20Kitty%20DT-min.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -253,7 +254,7 @@
 {
   .kitty-bg
 {
-  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwccdb69e6/images/2024/Home/072424/HK%20MB%20HP%20SNEAK%20PEEK%20BG%20M-min.png');
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwd4c66c68/images/2024/Home/073124/C-SPOT%20HK%20BG%20M-min.png');
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -274,7 +275,60 @@
 
 }
 
+/* ________________________________________________________________________________________________________________________________________________ */
+
+/* Aero  */
+
+.aero-bg
+{
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6f59b318/images/2024/Home/073124/D-SPOT%20AERO%20FOR%20ALL%20DT-min.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.im-5
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwd88a37c5/images/2024/Home/073124/D-SPOT%20AERO%20FOR%20ALL%20LOGO-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+
+@media (min-width:320px) and (max-width:575px)
+{
+  .aero-bg
+{
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwe809c233/images/2024/Home/073124/D-SPOT%20AERO%20FOR%20ALL%20M-min.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.im-4
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw0eb325b9/images/2024/Home/072424/Hello%20Kitty%20M-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+}
+
+
 /* _______________________________________________________________________________________ */
+/* blue img  */
 
 .blue-img{
   width: 100%;
@@ -320,7 +374,49 @@
 
 }
 
+/* smile img  */
 
+.smile-img{
+  width: 100%;
+  height: 264px;
+  /* background-color: aqua; */
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwfd8319c9/images/2024/Home/071024/D_SPOT_SHORTS_BG_DT-min.png');
+}
+
+@media (min-width:320px) and (max-width:575px)
+{
+  
+.smile-img{
+  width: 100%;
+  height: 458px;
+  /* background-color: aqua; */
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwbf514eba/images/2024/Home/071024/D_SPOT_SHORTS_BG_M-min.png');
+}
+}
+.im-6
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw29167b48/images/2024/Home/071024/50-70%20OFF_DT.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+@media (min-width:320px) and (max-width:575px)
+{
+  .im-6
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw58128e26/images/2024/Home/071024/50-70%20OFF_M.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+}
 
 
 /* _________________________________________________________________________________________________________________________________________ */

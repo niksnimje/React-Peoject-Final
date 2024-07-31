@@ -10,7 +10,7 @@ function Homepage() {
       {/* promo */}
       <div className="promo-main" style={{ overflow: 'hidden', height:"100px"}}>
         <div className="row d-flex justify-content-around overflow-scroll overflow-y-hidden " style={{flexWrap:"nowrap", gap:"20px"}}>
-          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3 ms-5" style={{ borderRadius: ".5vw" }}>
+          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3 ms-4" style={{ borderRadius: ".5vw" }}>
             <div className="row d-flex justify-content-around align-content-center align-items-center">
               <div className="col-6">
                 <h5>SHORTS</h5>
@@ -52,6 +52,8 @@ function Homepage() {
 
       <br /><br />
 
+{/* Yellow Img */}
+
       <div className="container-fluid p-0">
         <div className=" yellow-bg-img " >
          <div className='d-flex flex-column justify-content-center align-items-center h-100' >
@@ -69,7 +71,7 @@ function Homepage() {
 
     {/* first-img */}
 
-        <Link to={"/jeans"}>
+        <Link to={"/jeans"}  style={{textDecoration:"none"}}  >
         <div className="container-fluid Jeans-bg p-0 d-flex flex-column flex-sm-column flex-md-column flex-lg-row">
           
           <div className="col-12 col-sm-12 col-md-6 col-lg-3 p-0 im-1 mt-5">
@@ -83,7 +85,7 @@ function Homepage() {
 
            </div>
            <div className="col-12 col-sm-3 col-md-3 col-lg-1 d-none d-sm-none d-md-none d-lg-block im-3 img-fluid">
-
+            
            </div>
       </div>
         </Link>
@@ -91,21 +93,34 @@ function Homepage() {
     <br />
     <br />
     <br /> 
-    {/* secound-img */}
+    {/* kitty-img */}
 
 
-        <Link to={"/women"}>
+        <Link to={"/women"}  style={{textDecoration:"none"}}>
         <div className="container-fluid kitty-bg p-0 d-flex " style={{justifyContent:"center",alignContent:"center"}}>
-           <div className="col-12 col-sm-8 col-md-8 col-lg-6  im-4 img-fluid text-center" >
+           <div className="col-12 col-sm-8 col-md-8 col-lg-6  im-4  text-center" >
            </div>
         </div>
         </Link>
 
+        <br />
+    <br /> 
+    {/* Aero-img */}
+
+
+        <Link to={"/women"}  style={{textDecoration:"none"}}>
+        <div className="container-fluid aero-bg p-0 d-flex " style={{justifyContent:"center",alignContent:"center"}}>
+          <div className="col-1 col-sm-4 col-md-4 col-lg-6"></div>
+           <div className="col-12 col-sm-8 col-md-8 col-lg-4 im-5 img-fluid text-center" >
+            <h2></h2>
+           </div>
+        </div>
+        </Link>
       <br /><br />
 
     
       {/* blue Image */}
-      <Link to={"/women"}>
+      <Link to={"/women"} style={{textDecoration:"none"}}>
       <div className="container-fluid blue-img ">
         <div className="row g-3 g-sm-0 text-center d-flex align-items-center pt-4 align-content-center flex-column flex-sm-row flex-md-row flex-lg-row">
           <div className="col-3"></div>
@@ -134,17 +149,16 @@ function Homepage() {
       </Link>
 
       <br />
-      {/* blue Image 2*/}
+      {/* smile Image 2*/}
       <Link to={"/women"}>
-      <div className="container-fluid blue-img ">
-        <div className="row g-3 g-sm-0 text-center d-flex align-items-center pt-5 align-content-center flex-column flex-sm-row flex-md-row flex-lg-row">
+      <div className="container-fluid smile-img ">
+        <div className="row g-3 g-sm-0 text-center d-flex align-items-center align-content-center flex-column flex-sm-row flex-md-row flex-lg-row">
           <div className="col-3"></div>
-          <div className="col-4">
-            <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw29167b48/images/2024/Home/071024/50-70%20OFF_DT.png" width={800} alt="" />
+          <div className="col-12 col-sm-5 col-lg-5 im-6 ">
+            
           </div>
-          <div className="col-1"></div>
           
-          <div className="col-12 col-md-3">
+          <div className="col-12  col-md-3">
           <button className='btn-women-men ' ><Link to={"/women"} className=' women-btn '>Women</Link> &nbsp;&nbsp;&nbsp;&nbsp; <Link to={"/men"} className='men-btn'>Men</Link> </button>
           </div>
         </div>
