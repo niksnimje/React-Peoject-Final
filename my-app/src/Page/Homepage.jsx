@@ -8,9 +8,9 @@ function Homepage() {
   return (
     <>
       {/* promo */}
-      <div className="promo-main" style={{ overflow: 'hidden' }}>
-        <div className="row d-flex justify-content-around overflow-scroll overflow-y-hidden">
-          <div className="col-12 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
+      <div className="promo-main" style={{ overflow: 'hidden', height:"100px"}}>
+        <div className="row d-flex justify-content-around overflow-scroll overflow-y-hidden " style={{flexWrap:"nowrap", gap:"20px"}}>
+          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3 ms-5" style={{ borderRadius: ".5vw" }}>
             <div className="row d-flex justify-content-around align-content-center align-items-center">
               <div className="col-6">
                 <h5>SHORTS</h5>
@@ -22,7 +22,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
+          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
             <div className="row d-flex justify-content-around align-content-center align-items-center">
               <div className="col-6">
                 <h5>UP TO 50% OFF</h5>
@@ -34,7 +34,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
+          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
             <div className="row d-flex justify-content-around align-content-center align-items-center">
               <div className="col-6">
                 <h5>NEW TO CLEARANCE</h5>
@@ -51,23 +51,6 @@ function Homepage() {
 
 
       <br /><br />
-
-
-      {/* bg-img yellow */}
-      {/* <div className="yellow-img position-relative w-100">
-        <img
-          src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw3d439957/images/2024/Home/071024/A_SPOT_BG_DT-min.png"
-          alt="Background"
-          className="img-fluid"
-        />
-        <div className="deal-img position-absolute">
-          <img
-            src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw956e2e28/images/2024/Home/071024/A_SPOT_BTS%20DEALS_DT.png"
-            alt="Deal"
-            className="img-fluid"
-          />
-        </div>
-      </div> */}
 
       <div className="container-fluid p-0">
         <div className=" yellow-bg-img " >
