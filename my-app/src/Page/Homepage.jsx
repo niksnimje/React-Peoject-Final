@@ -79,7 +79,6 @@ function Homepage() {
             <button className='btn-women-men ' ><Link to={"/women"} className=' women-btn '>Women</Link> &nbsp;&nbsp;&nbsp;&nbsp; <Link to={"/men"} className='men-btn'>Men</Link> </button>
             </div>
           </div>
-        
            <div className="col-12 col-sm-3 col-md-3 col-lg-5 im-2 bottom-0 position-relative img-fluid d-none d-sm-none d-md-none d-lg-block">
 
            </div>
@@ -87,47 +86,77 @@ function Homepage() {
 
            </div>
       </div>
-        
         </Link>
 
-
-    {/* <div className="container-fluid p-0">
-        <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwc5e174af/images/2024/Home/071024/B_SPOT_JEANSBG_DT-min.png"  className="img-fluid" alt="" />
-    </div> */}
-
-
-    {/* https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw1567981d/images/2024/Home/071024/B_SPOT_EXTENDED-BADGE-DT.gif */}
+    <br />
+    <br />
+    <br /> 
+    {/* secound-img */}
 
 
-    {/* <div className="container-fluid p-0">
-        <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw7713e973/images/2024/Home/072424/HK%20DT%20HP%20SNEAK%20PEEK%20BG%20DT-min.png"  className="img-fluid" alt="" />
-    </div> */}
+        <Link to={"/women"}>
+        <div className="container-fluid kitty-bg p-0 d-flex " style={{justifyContent:"center",alignContent:"center"}}>
+           <div className="col-12 col-sm-8 col-md-8 col-lg-6  im-4 img-fluid text-center" >
+           </div>
+        </div>
+        </Link>
 
+      <br /><br />
+
+    
+      {/* blue Image */}
+      <Link to={"/women"}>
+      <div className="container-fluid blue-img ">
+        <div className="row g-3 g-sm-0 text-center d-flex align-items-center pt-4 align-content-center flex-column flex-sm-row flex-md-row flex-lg-row">
+          <div className="col-3"></div>
+          <div className="col-12 col-sm-3 col-md-3">
+            <h1  style={{color:"#f7d309",fontWeight:"700"}}>
+            A SHORT STORY</h1>
+          </div>
+          <div className="col-12 col-sm-3 col-md-3 ">
+            <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw25fa6242/images/2024/Home/072424/Shorts%20Badge-min.png" width={200} alt="" />
+          </div>
+          <div className="col-12 col-md-3">
+          <button className='btn-women-men ' ><Link to={"/women"} className=' women-btn '>Women</Link> &nbsp;&nbsp;&nbsp;&nbsp; <Link to={"/men"} className='men-btn'>Men</Link> </button>
+          </div>
+        </div>
+      </div>
+      </Link>
 
     <br />
 
+      {/* Uniform Image */}
 
-    {/* <div className="container-fluid p-0">
-        <img src="https://aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwfd8319c9/images/2024/Home/071024/D_SPOT_SHORTS_BG_DT-min.png"  className="img-fluid" alt="" />
-    </div>
-    <br />
-    <br /> */}
+      <Link to={"/women"}>
+      <div className="container-fluid uniform-img ">
+
+      </div>
+      </Link>
+
+      <br />
+      {/* blue Image 2*/}
+      <Link to={"/women"}>
+      <div className="container-fluid blue-img ">
+        <div className="row g-3 g-sm-0 text-center d-flex align-items-center pt-5 align-content-center flex-column flex-sm-row flex-md-row flex-lg-row">
+          <div className="col-3"></div>
+          <div className="col-4">
+            <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw29167b48/images/2024/Home/071024/50-70%20OFF_DT.png" width={800} alt="" />
+          </div>
+          <div className="col-1"></div>
+          
+          <div className="col-12 col-md-3">
+          <button className='btn-women-men ' ><Link to={"/women"} className=' women-btn '>Women</Link> &nbsp;&nbsp;&nbsp;&nbsp; <Link to={"/men"} className='men-btn'>Men</Link> </button>
+          </div>
+        </div>
+      </div>
+      </Link>
 
 
-    {/* <div className="container-fluid p-0 bg-black">
-        <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwa3958911/images/2024/Home/053024/G_THE%20UNIFORM%20SHOP_DT-min.png"  className="img-fluid" alt="" />
-    </div> */}
 
 
-    {/* <br />
-    <div className="container-fluid p-0 bg-black">
-        <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwfd8319c9/images/2024/Home/071024/D_SPOT_SHORTS_BG_DT-min.png"  className="img-fluid" alt="" />
-    </div> */}
-   
-    {/* <br />
-    <div className="container-fluid p-0 bg-black">
-        <img src=" https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwa9560238/images/2024/Home/071024/E_SPOT_AERO%20FOR%20ALL_BG_DT-min.png"  className="img-fluid" alt="" />
-    </div> */}
+
+  
+
 
 
     </>

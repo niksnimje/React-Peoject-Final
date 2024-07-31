@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
 import { FaRegHeart, FaSearch, FaMapMarkerAlt, FaUser, FaShoppingCart } from "react-icons/fa";
-import { Navbar, Nav, Container, Form, FormControl, Button, Offcanvas } from 'react-bootstrap';
+import { Navbar, Nav, Container, Form, FormControl, Button, Offcanvas, NavDropdown } from 'react-bootstrap';
 
 function NavbarCompo() {
   const [show, setShow] = useState(false);
@@ -21,10 +21,15 @@ function NavbarCompo() {
               <Nav.Link as={NavLink} to="/jeans">Jeans</Nav.Link>
               <Nav.Link as={NavLink} to="/aero-for-all">Aero For All</Nav.Link>
               <Nav.Link as={NavLink} to="/clearance">Clearance</Nav.Link></div>
-              
+              {/* <NavDropdown title="Dropdown" >
+        <NavDropdown.Item >Action</NavDropdown.Item>
+        <NavDropdown.Item>Another action</NavDropdown.Item>
+        <NavDropdown.Item >Something else here</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item >Separated link</NavDropdown.Item>
+      </NavDropdown> */}
             </Nav>
           <Navbar.Brand as={NavLink}  to="/" style={
-            
             {display:"flex", justifyContent:"center", width:"55%"}
           }>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 22" id="logo" style={{ width: '200px', height: 'auto'}}>

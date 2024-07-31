@@ -11,16 +11,20 @@
   height: auto;
 }
 
-.Women_Hov
+/* Navbar Hover */
+
+/* .Women_Hov
 {
   
-}
+} */
 
 .Women_Hov:hover
 {
   border-bottom: 1px solid black;
 }
 
+
+/* _________________________________________________________________________ */
 /* Yellow Image */
 
 .yellow-img {
@@ -120,7 +124,7 @@
 
 }
 
-
+/* _________________________________________________________________________________________________ */
 /* Btn Women Men */
 
 .btn-women-men{
@@ -162,7 +166,7 @@
   border-bottom: 1px solid  black;
 }
 
-
+/* ________________________________________________________________________________________________________________________________________________ */
 /* Jeans Buy One Get One  */
 
 .Jeans-bg
@@ -219,13 +223,113 @@
 
 
 
+/* ________________________________________________________________________________________________________________________________________________ */
+/* Kitty  */
+
+.kitty-bg
+{
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw7713e973/images/2024/Home/072424/HK%20DT%20HP%20SNEAK%20PEEK%20BG%20DT-min.png ');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.im-4
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw481f733b/images/2024/Home/072424/Hello%20Kitty%20DT-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: flex-end; 
+
+}
+
+@media (min-width:320px) and (max-width:575px)
+{
+  .kitty-bg
+{
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwccdb69e6/images/2024/Home/072424/HK%20MB%20HP%20SNEAK%20PEEK%20BG%20M-min.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.im-4
+{
+  height: 300px;
+  width: 400px;
+  background: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw0eb325b9/images/2024/Home/072424/Hello%20Kitty%20M-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+}
+
+/* _______________________________________________________________________________________ */
+
+.blue-img{
+  width: 100%;
+  height: 264px;
+  /* background-color: aqua; */
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwfd8319c9/images/2024/Home/071024/D_SPOT_SHORTS_BG_DT-min.png');
+}
+
+@media (min-width:320px) and (max-width:575px)
+{
+  
+.blue-img{
+  width: 100%;
+  height: 458px;
+  /* background-color: aqua; */
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwbf514eba/images/2024/Home/071024/D_SPOT_SHORTS_BG_M-min.png');
+}
+}
+/* _______________________________________________________________________________________ */
+
+.uniform-img{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwa3958911/images/2024/Home/053024/G_THE%20UNIFORM%20SHOP_DT-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000;
+}
+
+@media (min-width:320px) and (max-width:575px)
+{
+  
+.uniform-img{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw790915fa/images/2024/Home/053024/G_THE%20UNIFORM%20SHOP_M-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000;
+}
+
+}
+
+
+
+
+/* _________________________________________________________________________________________________________________________________________ */
 /* Footer */
 
 
 .footer-ul-main
 {
   font-size: 20px;
-
 }
 
 
