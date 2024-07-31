@@ -111,7 +111,7 @@ function Homepage() {
         <Link to={"/women"}  style={{textDecoration:"none"}}>
         <div className="container-fluid aero-bg p-0 d-flex " style={{justifyContent:"center",alignContent:"center"}}>
           <div className="col-1 col-sm-4 col-md-4 col-lg-6"></div>
-           <div className="col-12 col-sm-8 col-md-8 col-lg-4 im-5 img-fluid text-center" >
+           <div className="col-10 col-sm-8 col-md-8 col-lg-4 im-5 img-fluid text-center" >
             <h2></h2>
            </div>
         </div>
