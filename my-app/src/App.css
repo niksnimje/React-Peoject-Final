@@ -432,6 +432,57 @@
 }
 
 
+/* sidebar */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+.sidebar {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.sidebar-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-section ul li {
+  margin-bottom: 10px;
+}
+
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.color-box.black { background-color: black; }
+.color-box.blue { background-color: blue; }
+.color-box.brown { background-color: brown; }
+.color-box.green { background-color: green; }
+.color-box.grey { background-color: grey; }
+.color-box.multicolor { background-color: #ccc; }
+.color-box.tan { background-color: tan; }
+.color-box.white { background-color: white; }
+
+
+
+
 /* _________________________________________________________________________________________________________________________________________ */
 /* Footer */
 
