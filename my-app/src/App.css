@@ -481,6 +481,12 @@
 .color-box.white { background-color: white; }
 
 
+.main-content {
+  margin-left: 270px; /* Adjust according to the sidebar width */
+  padding: 20px;
+}
+
+
 
 
 /* _________________________________________________________________________________________________________________________________________ */

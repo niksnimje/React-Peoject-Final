@@ -30,7 +30,7 @@ function Women() {
             <div className="row">
               {womendata.map((el) => (
                 <div key={el.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                  <Link to={"/descri"}>
+                   <Link to={`/description/${el.id}`}>
                     <img src={el.img} alt={el.title} className="img-fluid" />
                   </Link>
                   <h5>{el.title}</h5>
@@ -41,6 +41,9 @@ function Women() {
           </div>
         </div>
       </div>
+
+
+      
     </>
   );
 }

@@ -1,28 +1,44 @@
 {
-        "women-product":[
+    "women-product": [
         {
-            "id":"1",
-            "img":"https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "title":"Hello Kitty Graphic Cami",
-            "price":"14.97"
+            "id": "1",
+            "img": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "title": "Hello Kitty Graphic Cami",
+            "price": "14.97",
+            "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
+            "details": "Material: 100% Cotton. Machine washable. Imported.",
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "colors": ["Black", "White"]
         },
         {
-            "id":"1",
-            "img":"https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "title":"Hello Kitty Graphic Cami",
-            "price":"14.97"
+            "id": "2",
+            "img": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "title": "Hello Kitty Graphic Cami",
+            "price": "14.97",
+            "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
+            "details": "Material: 100% Cotton. Machine washable. Imported.",
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "colors": ["Black", "White"]
         },
         {
-            "id":"1",
-            "img":"https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "title":"Hello Kitty Graphic Cami",
-            "price":"14.97"
+            "id": "3",
+            "img": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "title": "Hello Kitty Graphic Cami",
+            "price": "14.97",
+            "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
+            "details": "Material: 100% Cotton. Machine washable. Imported.",
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "colors": ["Black", "White"]
         },
         {
-            "id":"1",
-            "img":"https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "title":"Hello Kitty Graphic Cami",
-            "price":"14.97"
+            "id": "4",
+            "img": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw044b9801/81161607_102_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "title": "Hello Kitty Graphic Cami",
+            "price": "14.97",
+            "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
+            "details": "Material: 100% Cotton. Machine washable. Imported.",
+            "sizes": ["XS", "S", "M", "L", "XL"],
+            "colors": ["Black", "White"]
         }
     ]
 }

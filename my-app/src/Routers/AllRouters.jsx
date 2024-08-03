@@ -12,6 +12,7 @@ import Account from '../Page/Account';
 import Cart from '../Page/Cart';
 import Homepage from '../Page/Homepage';
 import Women from '../Page/Women';
+import Description from '../Components/Description';
 
 
 
@@ -23,6 +24,7 @@ function AllRouters() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/women" element={<Women />} />
+        <Route path="/description/:id" element={<Description />}  />
         <Route path="/men" element={<Men />} />
         <Route path="/jeans" element={<Jeans />} />
         <Route path="/aero-for-all" element={<AeroForAll />} />

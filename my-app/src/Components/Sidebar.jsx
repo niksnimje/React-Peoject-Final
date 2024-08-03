@@ -6,11 +6,10 @@ function Sidebar() {
       <div className="sidebar-section">
         <h6>Category</h6>
         <ul>
-          <li><input type="checkbox" /> Blazers</li>
+          <li><input type="checkbox" /> Top</li>
           <li><input type="checkbox" /> Bottoms</li>
-          <li><input type="checkbox" /> Dresses & Jumpsuits</li>
+          {/* <li><input type="checkbox" /> Dresses & Jumpsuits</li> */}
           <li><input type="checkbox" /> Matching Sets</li>
-          <li><input type="checkbox" /> Tops</li>
         </ul>
       </div>
       <div className="sidebar-section">
@@ -29,14 +28,10 @@ function Sidebar() {
       <div className="sidebar-section">
         <h6>Size</h6>
         <ul className="size-list">
-          <li><input type="checkbox" /> XXS</li>
-          <li><input type="checkbox" /> XS</li>
-          <li><input type="checkbox" /> S</li>
           <li><input type="checkbox" /> M</li>
           <li><input type="checkbox" /> L</li>
           <li><input type="checkbox" /> XL</li>
           <li><input type="checkbox" /> XXL</li>
-          <li><input type="checkbox" /> XXXL</li>
         </ul>
       </div>
     </div>
