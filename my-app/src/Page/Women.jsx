@@ -1,8 +1,23 @@
 import React from 'react'
 
 function Women() {
+
+  
+
   return (
     <>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-3">
+            
+          </div>
+          <div className="col-3"></div>
+          <div className="col-3"></div>
+          <div className="col-3"></div>
+        </div>
+      </div>
+
     
       <div className="container mt-4">
       <div className="row">

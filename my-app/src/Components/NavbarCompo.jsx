@@ -55,19 +55,24 @@ function NavbarCompo() {
               <Nav.Link as={NavLink} to="/locations"><FaMapMarkerAlt /></Nav.Link>
               <Nav.Link as={NavLink} to="/account" className='account-hover'><FaUser />
               </Nav.Link>
-              
-              {/* <NavDropdown title={<FaUser />} >
-              <div >
-              <NavDropdown.Item >
-          <button>Create New Account</button>
+
+              {/* <NavDropdown title={<FaUser />} as={NavLink} to="/account" className="nav-item">
+      <NavDropdown.Menu className="dropdown-menu">
+        <NavDropdown.Item>
+          <button className="btn btn-link">Create New Account</button>
         </NavDropdown.Item>
         <NavDropdown.Item>
-          <button>Sing In</button>
+          <button className="btn btn-link">Sign In</button>
         </NavDropdown.Item>
-        <NavDropdown.Item >Track an order</NavDropdown.Item>
-        <NavDropdown.Item >Get Help</NavDropdown.Item>
-              </div>
-      </NavDropdown> */}
+        <NavDropdown.Item>
+          Track an order
+        </NavDropdown.Item>
+        <NavDropdown.Item>
+          Get Help
+        </NavDropdown.Item>
+      </NavDropdown.Menu>
+              </NavDropdown> */}
+
               <Nav.Link as={NavLink} to="/cart"><FaShoppingCart /></Nav.Link>
             </Nav>
           </Navbar.Collapse>

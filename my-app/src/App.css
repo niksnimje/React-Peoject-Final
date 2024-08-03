@@ -19,6 +19,17 @@
   
 } */
 
+/* Remove dropdown arrow */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
 .Women_Hov:hover
 {
   border-bottom: 1px solid black;
