@@ -61,7 +61,8 @@ function Description() {
                     <ul style={{listStyle:"none"}}>
                         {product.colors.map((color, index) => (
                             <li key={index}>{color}</li>
-                        ))}
+                        ))} <br />
+              <button >Add To Bag</button>
                     </ul>
                 </div>
                 </div>

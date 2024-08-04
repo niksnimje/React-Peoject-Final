@@ -487,6 +487,35 @@
 }
 
 
+/* _________________________________________________________________________________________________________________________________________ */
+/* Location */
+
+.store-locator-container {
+  background-color: #23395d; /* Navy background color */
+  padding: 40px 0;
+  
+}
+
+.store-locator-title {
+  color: white;
+  font-weight: bold;
+}
+
+.store-locator-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.input-group .form-control {
+  border-right: none;
+}
+
+.input-group .btn {
+  border-left: none;
+}
+
+
+
 
 
 /* _________________________________________________________________________________________________________________________________________ */

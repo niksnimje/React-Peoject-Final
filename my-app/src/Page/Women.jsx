@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from '../Components/Sidebar';
 // import Sidebar from './Sidebar';
+// import src\Page\Css\Women.css
+import './Css/Women.css';
+
 
 
 function Women() {
