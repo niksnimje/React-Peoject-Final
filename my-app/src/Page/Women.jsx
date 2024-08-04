@@ -7,17 +7,18 @@ import Sidebar from '../Components/Sidebar';
 
 function Women() {
   const [womendata, setwomendata] = useState([]);
+  const [page, setpage] = useState(1);
 
   const WomensProduct = () => {
     axios
-      .get('http://localhost:3000/women-product')
+      .get(`http://localhost:3000/women-product?_page=${page}&_per_page=5`)
       .then((res) => setwomendata(res.data))
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     WomensProduct();
-  }, []);
+  }, [page]);
 
   return (
     <>
@@ -38,6 +39,11 @@ function Women() {
                 </div>
               ))}
             </div>
+             <div className="btn-class text-center">
+             <button onClick={()=>setpage(page-1)}>Prev</button>
+              <span>{page}</span>
+              <button onClick={()=>setpage(page+1)}>Next</button>
+             </div>
           </div>
         </div>
       </div>

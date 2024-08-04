@@ -2,7 +2,7 @@ import React from 'react';
 
 function Sidebar() {
   return (
-    <div className="sidebar">
+    <div className="sidebar d-none d-sm-none d-md-block d-lg-block">
       <div className="sidebar-section">
         <h6>Category</h6>
         <ul>
