@@ -2,8 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from '../Components/Sidebar';
-// import Sidebar from './Sidebar';
-// import src\Page\Css\Women.css
 import './Css/Women.css';
 
 
@@ -14,7 +12,7 @@ function Women() {
 
   const WomensProduct = () => {
     axios
-      .get(`http://localhost:3000/women-product?_page=${page}&_per_page=5`)
+      .get(`http://localhost:3000/women-product?_page=${page}&_per_page=10`)
       .then((res) => setwomendata(res.data))
       .catch((err) => console.log(err));
   };
@@ -43,9 +41,9 @@ function Women() {
               ))}
             </div>
              <div className="btn-class text-center">
-             <button onClick={()=>setpage(page-1)}>Prev</button>
+             <button className='btn btn-primary ' onClick={()=>setpage(page-1)}>Prev</button>
               <span>{page}</span>
-              <button onClick={()=>setpage(page+1)}>Next</button>
+              <button className='btn btn-primary' onClick={()=>setpage(page+1)}>Next</button>
              </div>
           </div>
         </div>

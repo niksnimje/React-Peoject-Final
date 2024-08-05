@@ -81,24 +81,24 @@ function Description() {
             </Tab.Container>
           </div>
           <div className="col-12 col-lg-5">
-            <div className="product-details" style={{ textAlign: "center", marginLeft: "5%" }}>
+            <div className="product-details text-center text-lg-start" style={{ textAlign: "left", marginLeft: "5%" }}>
               <h1>{product.title}</h1>
               <h4>Price: ${product.price}</h4>
               <p>{product.description}</p>
               <h4>Details</h4>
               <p>{product.details}</p>
               <h4>Available Sizes</h4>
-              <ul style={{ listStyle: "none", display: "flex", gap: "10px", justifyContent: "center" }}>
+              <ul className='p-0 d-flex justify-content-center justify-content-lg-start  ' style={{ listStyle: "none", gap: "10px"}}>
                 {product.sizes.map((size, index) => (
                   <li key={index}>{size}</li>
                 ))}
               </ul>
               <h4>Available Colors</h4>
-              <ul style={{ listStyle: "none" }}>
+              <ul className='p-0' style={{ listStyle: "none" }}>
                 {product.colors.map((color, index) => (
                   <li key={index}>{color}</li>
                 ))} <br />
-                <button>Add To Bag</button>
+                <button className=' btn btn-primary'>Add To Bag</button>
               </ul>
             </div>
           </div>

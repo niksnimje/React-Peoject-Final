@@ -3,9 +3,22 @@ import './Css/Men.css';
 
 
 function Men() {
+
+  const [mendata, setmendata] = useState([]);
+  const [page, setpage] = useState(1);
+
+  const MensProduct = () => {
+    axios
+      .get(`http://localhost:3000/men-product?_page=${page}&_per_page=10`)
+      .then((res) => setmendata(res.data))
+      .catch((err) => console.log(err));
+  };
+
+
   return (
     <>
-         <div className="container my-5">
+
+    <div className="container my-5">
       <div className="row">
         <div className="col-md-6">
           <h2>The Latest In Guys' Clothes</h2>
