@@ -12,7 +12,7 @@ function Women() {
 
   const WomensProduct = () => {
     axios
-      .get(`http://localhost:3000/women-product?_page=${page}&_per_page=10`)
+      .get(`http://localhost:3000/women-product?_page=${page}&_per_page=12`)
       .then((res) => setwomendata(res.data))
       .catch((err) => console.log(err));
   };
@@ -30,6 +30,22 @@ function Women() {
           </div>
           <div className="col-12 col-md-9 offset-md-3">
             <div className="row">
+            <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+        <div>
+          <select name="" id="" className='select-main' onChange={(e) => setcategory(e.target.value)}>
+            <option value="">Select Your Category</option>
+            <option value="men's clothing">men's clothing</option>
+            <option value="women's clothing">women's clothing</option>
+            <option value="electronics">electronics</option>
+            <option value="jewelery">jewelery</option>
+          </select>
+        </div>
+
+        <div>
+          <button onClick={()=>setorder("desc")}>High To Low</button>
+          <button onClick={()=>setorder("asc")}>Low To High</button>
+        </div>
+      </div>
               {womendata.map((el) => (
                 <div key={el.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
                    <Link to={`/description/${el.id}`}>
@@ -41,7 +57,7 @@ function Women() {
               ))}
             </div>
              <div className="btn-class text-center">
-             <button className='btn btn-primary ' onClick={()=>setpage(page-1)}>Prev</button>
+             <button className='btn btn-primary '  onClick={()=>setpage(page-1)}>Prev</button>
               <span>{page}</span>
               <button className='btn btn-primary' onClick={()=>setpage(page+1)}>Next</button>
              </div>

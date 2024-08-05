@@ -19,21 +19,10 @@ function Sidebar() {
           <li className="color-option"><input type="checkbox" /> <span className="color-box blue"></span> Blue</li>
           <li className="color-option"><input type="checkbox" /> <span className="color-box brown"></span> Brown</li>
           <li className="color-option"><input type="checkbox" /> <span className="color-box green"></span> Green</li>
-          <li className="color-option"><input type="checkbox" /> <span className="color-box grey"></span> Grey</li>
-          <li className="color-option"><input type="checkbox" /> <span className="color-box multicolor"></span> Multicolor</li>
-          <li className="color-option"><input type="checkbox" /> <span className="color-box tan"></span> Tan</li>
           <li className="color-option"><input type="checkbox" /> <span className="color-box white"></span> White</li>
         </ul>
       </div>
-      <div className="sidebar-section">
-        <h6>Size</h6>
-        <ul className="size-list">
-          <li><input type="checkbox" /> M</li>
-          <li><input type="checkbox" /> L</li>
-          <li><input type="checkbox" /> XL</li>
-          <li><input type="checkbox" /> XXL</li>
-        </ul>
-      </div>
+     
     </div>
   );
 }

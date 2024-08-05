@@ -20,7 +20,7 @@ function Description() {
 
   const DesProduct = () => {
     axios
-      .get('http://localhost:3000/women-product')
+      .get(`http://localhost:3000/women-product`)
       .then((res) => setdesdata(res.data))
       .catch((err) => console.log(err));
   };
@@ -110,6 +110,7 @@ function Description() {
           <h3>You May Also Like</h3>
           {desdata.map((el) => (
             <div key={el.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
+                
               <Link to={`/description/${el.id}`}>
                 <img src={el.img} alt={el.title} className="img-fluid" />
               </Link>
