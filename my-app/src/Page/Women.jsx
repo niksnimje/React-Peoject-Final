@@ -10,6 +10,7 @@ function Women() {
   const [womendata, setwomendata] = useState([]);
   const [page, setpage] = useState(1);
   const [order, setorder] = useState(null);
+  const [selectcategory, setcategory] = useState(null);
 
   const WomensProduct = () => {
     axios
@@ -17,7 +18,8 @@ function Women() {
       params: {
         _page: page,
         _limit: 10,
-        // category: selectcategory,
+        // category: selectcategory
+        category: selectcategory || undefined,
         _sort:"price",
         _order:order
       },
@@ -28,7 +30,7 @@ function Women() {
 
   useEffect(() => {
     WomensProduct();
-  }, [page,order]);
+  }, [page,order,selectcategory]);
 
   return (
     <>
@@ -40,13 +42,14 @@ function Women() {
           <div className="col-12 col-md-9 offset-md-3">
             <div className="row">
             <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-        {/* <div>
+        <div>
           <select name="" id="" className='select-main' onChange={(e) => setcategory(e.target.value)}>
-            <option value="">Short Price</option>
-            <option value="high">High To Low</option>
-            <option value="low">Low To High</option>
+            <option value="">Show Filters</option>
+            <option value="Featured">Featured</option>
+            <option value="Best">Best Seller</option>
+            <option value="Newest">Newest</option>
           </select>
-        </div> */}
+        </div>
 
         <div>
           <button onClick={()=>setorder("desc")}>High To Low</button>
@@ -73,7 +76,6 @@ function Women() {
       </div>
 
 
-      
     </>
   );
 }
