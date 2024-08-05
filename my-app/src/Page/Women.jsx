@@ -9,17 +9,26 @@ import './Css/Women.css';
 function Women() {
   const [womendata, setwomendata] = useState([]);
   const [page, setpage] = useState(1);
+  const [order, setorder] = useState(null);
 
   const WomensProduct = () => {
     axios
-      .get(`http://localhost:3000/women-product?_page=${page}&_per_page=12`)
+    .get('http://localhost:3000/women-product', {
+      params: {
+        _page: page,
+        _limit: 10,
+        // category: selectcategory,
+        _sort:"price",
+        _order:order
+      },
+    })
       .then((res) => setwomendata(res.data))
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     WomensProduct();
-  }, [page]);
+  }, [page,order]);
 
   return (
     <>
@@ -31,15 +40,13 @@ function Women() {
           <div className="col-12 col-md-9 offset-md-3">
             <div className="row">
             <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-        <div>
+        {/* <div>
           <select name="" id="" className='select-main' onChange={(e) => setcategory(e.target.value)}>
-            <option value="">Select Your Category</option>
-            <option value="men's clothing">men's clothing</option>
-            <option value="women's clothing">women's clothing</option>
-            <option value="electronics">electronics</option>
-            <option value="jewelery">jewelery</option>
+            <option value="">Short Price</option>
+            <option value="high">High To Low</option>
+            <option value="low">Low To High</option>
           </select>
-        </div>
+        </div> */}
 
         <div>
           <button onClick={()=>setorder("desc")}>High To Low</button>
@@ -47,7 +54,7 @@ function Women() {
         </div>
       </div>
               {womendata.map((el) => (
-                <div key={el.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
+                <div key={el.id} className="pt-5 col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
                    <Link to={`/description/${el.id}`}>
                     <img src={el.img} alt={el.title} className="img-fluid" />
                   </Link>
@@ -57,9 +64,9 @@ function Women() {
               ))}
             </div>
              <div className="btn-class text-center">
-             <button className='btn btn-primary '  onClick={()=>setpage(page-1)}>Prev</button>
+             <button className='btn btn-primary'  disabled={page === 0} onClick={()=>setpage(page-1)}>Prev</button>
               <span>{page}</span>
-              <button className='btn btn-primary' onClick={()=>setpage(page+1)}>Next</button>
+              <button className='btn btn-primary'   disabled={womendata.length < 10}  onClick={()=>setpage(page+1)}>Next</button>
              </div>
           </div>
         </div>
