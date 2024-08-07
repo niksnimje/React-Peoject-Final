@@ -25,7 +25,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "White" ,
             "category":"Featured"
         },
         {
@@ -39,7 +39,6 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
             "category":"Featured"
         },
         {
@@ -53,7 +52,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors": "Black"  ,
             "category":"Featured"
 
         },
@@ -68,7 +67,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors": "Blue" ,
             "category":"Best"
         },
         {
@@ -82,7 +81,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Green" ,
             "category":"Best"
 
         },
@@ -97,7 +96,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Blue" ,
             "category":"Best"
         },
         {
@@ -111,7 +110,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "White" ,
             "category":"Best"
 
         },
@@ -126,7 +125,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors": "Black"  ,
             "category":"Best"
         },
         {
@@ -140,7 +139,6 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
             "category":"Best"
 
         },
@@ -155,7 +153,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Blue" ,
             "category":"Best"
         },
         {
@@ -169,7 +167,6 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
             "category":"Best"
 
         },
@@ -184,7 +181,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors": "Blue"  ,
             "category":"Newest"
         },
         {
@@ -198,7 +195,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Blue" ,
             "category":"Newest"
 
         },
@@ -213,7 +210,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors": "White"  ,
             "category":"Newest"
         },
         {
@@ -227,7 +224,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Black" ,
             "category":"Newest"
 
         },
@@ -242,7 +239,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Grey" ,
             "category":"Newest"
         },
         {
@@ -256,7 +253,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "White" ,
             "category":"Newest"
 
         },
@@ -285,7 +282,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Blue" ,
             "category":"Newest"
 
         },
@@ -300,7 +297,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": "Black",
+            "colors": "White",
             "category":"Newest"
         },
         {
@@ -309,20 +306,20 @@
             "img2": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw37712f28/87731644_868_alt1.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
             "img3": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw26a866c6/87731644_868_alt3.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
             "img4": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dwf6d9f0aa/87731644_868_alt5.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "title": "Pontiac GTO Off-The-Shoulder Graphic Tee",
+            "title": "Hello Kitty Varsity Bomber Jacket",
             "price": "17.97",
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": "Black",
+            "colors": "Brown",
             "category":"Newest"
         },
         {
             "id": "23",
-            "img": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw09f3d85c/82311104_123_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "img2": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw9347b0ab/82311104_123_alt1.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "img3": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw53adfbd9/82311104_123_alt2.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-            "img4": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw004bdce1/82311104_123_alt3.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "img": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw78ac1e62/86741064_007_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "img2": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw64c38b0b/86741064_007_alt1.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "img3": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dwe5e798b5/86741064_007_alt2.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+            "img4": "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dwa97f3f58/86741064_007_alt3.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
             "title": "Classic Logo T-Shirt",
             "price": "12.97",
             "description": "Comfortable t-shirt featuring a classic logo design.",
@@ -558,7 +555,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors": "White"  ,
             "catagory":""
         },
         {
@@ -572,7 +569,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Black" ,
             "catagory":""
 
         },
@@ -587,7 +584,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "White" ,
             "catagory":""
 
         },
@@ -602,7 +599,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "Brown" ,
             "catagory":""
 
         }
