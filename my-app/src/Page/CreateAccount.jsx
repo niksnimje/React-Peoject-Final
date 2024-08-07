@@ -9,9 +9,11 @@ function CreateAccount() {
     
     const hendelogin = () => {
         signInWithPopup(auth, provider, provider2)
-        .then((res) => console.log(res))
+        .then((res) => {
+            console.log(res)
+            window.location.href = '/women';
+        })
         .catch((err) => console.log(err));
-        window.location()
     };
 
     return (
