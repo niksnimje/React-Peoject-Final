@@ -10,7 +10,7 @@ function Homepage() {
       {/* promo */}
       <div className="promo-main" style={{ overflow: 'hidden', height:"100px"}}>
         <div className="row d-flex justify-content-around overflow-scroll overflow-y-hidden " style={{flexWrap:"nowrap", gap:"20px"}}>
-          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3 ms-4" style={{ borderRadius: ".5vw" }}>
+          <div className="col-10 col-md-4 col-lg-3 bg-black text-light p-3 mb-3 ms-4" style={{ borderRadius: ".5vw" }}>
             <div className="row d-flex justify-content-around align-content-center align-items-center">
               <div className="col-6">
                 <h5>SHORTS</h5>
@@ -22,7 +22,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
+          <div className="col-10 col-md-4 col-lg-3 bg-black text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
             <div className="row d-flex justify-content-around align-content-center align-items-center">
               <div className="col-6">
                 <h5>UP TO 50% OFF</h5>
@@ -34,7 +34,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="col-10 col-md-4 col-lg-3 bg-dark text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
+          <div className="col-10 col-md-4 col-lg-3 bg-black text-light p-3 mb-3" style={{ borderRadius: ".5vw" }}>
             <div className="row d-flex justify-content-around align-content-center align-items-center">
               <div className="col-6">
                 <h5>NEW TO CLEARANCE</h5>
@@ -72,20 +72,21 @@ function Homepage() {
     {/* first-img */}
 
         <Link to={"/jeans"}  style={{textDecoration:"none"}}  >
-        <div className="container-fluid Jeans-bg p-0 d-flex flex-column flex-sm-column flex-md-column flex-lg-row">
+        <div className="container-fluid Jeans-bg p-0 d-flex justify-content-evenly  align-items-center flex-column flex-sm-column flex-md-column flex-lg-row">
+          
           
           <div className="col-12 col-sm-12 col-md-6 col-lg-3 p-0 im-1 mt-5">
-            <div className="frist-image-content text-light text-center" style={{marginTop:"70%"}}> <br /><br />
+            
+          </div>
+           <div className="col-12 col-sm-3 col-md-3 col-lg-3 im-2 bottom-0 position-relative img-fluid d-none d-sm-none d-md-none d-lg-block">
+           <div className="frist-image-content text-light text-center" style={{marginTop:"90%"}}> <br /><br />
             <h1>
             + FREE SHIPPING! </h1>
             <button className='btn-women-men ' ><Link to={"/women"} className=' women-btn '>Women</Link> &nbsp;&nbsp;&nbsp;&nbsp; <Link to={"/men"} className='men-btn'>Men</Link> </button>
             </div>
-          </div>
-           <div className="col-12 col-sm-3 col-md-3 col-lg-5 im-2 bottom-0 position-relative img-fluid d-none d-sm-none d-md-none d-lg-block">
-
            </div>
-           <div className="col-12 col-sm-3 col-md-3 col-lg-1 d-none d-sm-none d-md-none d-lg-block im-3 img-fluid">
-            
+           <div className="col-12 col-sm-3 col-md-3 col-lg-3 d-none d-sm-none d-md-none d-lg-block im-3 ">
+
            </div>
       </div>
         </Link>
@@ -99,6 +100,13 @@ function Homepage() {
         <Link to={"/women"}  style={{textDecoration:"none"}}>
         <div className="container-fluid kitty-bg p-0 d-flex " style={{justifyContent:"center",alignContent:"center"}}>
            <div className="col-12 col-sm-8 col-md-8 col-lg-6  im-4  text-center" >
+            <div className="im-4-con" style={{marginTop:"30%"}}>
+              <h4 className='text-light'>
+              ONE-OF-A-KIND CUTENESS, GET YOURS NOW!</h4>
+              <div className="btn text-black ps-5 pe-5" style={{backgroundColor:"white", borderRadius:"20px"}}>
+                Shop Now
+              </div>
+            </div>
            </div>
         </div>
         </Link>
