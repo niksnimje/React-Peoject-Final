@@ -8,46 +8,50 @@ function Homepage() {
   return (
     <>
       {/* promo */}
-      <div className="promo-main" style={{ overflow: 'hidden', height:"100px"}}>
-        <div className="row d-flex flex-row justify-content-around  overflow-scroll overflow-y-hidden " style={{flexWrap:"nowrap", gap:"20px"}}>
-          <div className="col-10 col-md-4 col-lg-3 bg-black text-light pb-5 mb-3 ms-4 d-flex align-items-center align-content-center" style={{ borderRadius: ".5vw" }}>
-            <div className="row  flex-row align-content-center align-items-center">
-              <div className="col-6">
-                <h5>SHORTS</h5>
-                <h5>$12 & UP</h5>
-              </div>
-              <div className="col-6 bg-light p-3 text-center" style={{ borderRadius: "20px" }}>
-                <Link href="" className="">Women</Link>
-                <Link href="" className='p-3'>Men</Link>
-              </div>
+      <div className="promo-main" style={{ overflow: 'hidden', height: "100px" }}>
+      <div className="row d-flex flex-row justify-content-around overflow-auto overflow-y-hidden" style={{ flexWrap: "nowrap", gap: "20px" }}>
+        
+        <div className="col-10 col-md-4 col-lg-3 bg-black text-light pb-5 mb-3 ms-4 d-flex align-items-center" style={{ borderRadius: ".5vw" }}>
+          <div className="row flex-row justify-content-between align-content-center align-items-center">
+            <div className="col-6">
+              <h5>SHORTS</h5>
+              <h5>$12 & UP</h5>
             </div>
-          </div>
-          <div className="col-10 col-md-4 col-lg-3 bg-black text-light pb-3 mb-3 d-flex align-items-center align-content-center" style={{ borderRadius: ".5vw" }}>
-            <div className="row  flex-row justify-content-around align-content-center align-items-center">
-              <div className="col-6">
-                <h5>UP TO 50% OFF</h5>
-                <h5>NEW ARRIVALS</h5>
-              </div>
-              <div className="col-6 bg-light p-3 text-center" style={{ borderRadius: "20px" }}>
-                <a href="" className="p-2">Women</a>
-                <a href="" className="p-2">Men</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-10 col-md-4 col-lg-3 bg-black text-light p-3 mb-3 d-flex align-items-center align-content-center" style={{ borderRadius: ".5vw" }}>
-            <div className="row  flex-row justify-content-around align-content-center align-items-center">
-              <div className="col-6">
-                <h5>NEW TO CLEARANCE</h5>
-                <h5>$5.99 & UP</h5>
-              </div>
-              <div className="col-6 bg-light p-3 text-center" style={{ borderRadius: "20px" }}>
-                <a href="" className="p-2">Women</a>
-                <a href="" className="p-2">Men</a>
-              </div>
+            <div className="col-6 bg-light p-3 text-center" style={{ borderRadius: "20px" }}>
+              <Link to="/women" className="">Women</Link>
+              <Link to="/men" className='p-3'>Men</Link>
             </div>
           </div>
         </div>
+        
+        <div className="col-10 col-md-4 col-lg-3 bg-black text-light pb-3 mb-3 d-flex align-items-center" style={{ borderRadius: ".5vw" }}>
+          <div className="row justify-content-between flex-row align-content-center align-items-center">
+            <div className="col-6">
+              <h5>UP TO 50% OFF</h5>
+              <h5>NEW ARRIVALS</h5>
+            </div>
+            <div className="col-6 bg-light p-3 text-center" style={{ borderRadius: "20px" }}>
+              <Link  to="/women" className="p-2">Women</Link>
+              <Link to="/men" className="p-2">Men</Link>
+            </div>
+          </div>
+        </div>
+        
+        <div className="col-10 col-md-4 col-lg-3 bg-black text-light p-3 mb-3 d-flex align-items-center" style={{ borderRadius: ".5vw" }}>
+          <div className="row justify-content-between flex-row align-content-center align-items-center">
+            <div className="col-6">
+              <h5>NEW TO CLEARANCE</h5>
+              <h5>$5.99 & UP</h5>
+            </div>
+            <div className="col-6 bg-light p-3 text-center" style={{ borderRadius: "20px" }}>
+              <Link  to="/women" className="p-2">Women</Link>
+              <Link to="/men" className="p-2">Men</Link>
+            </div>
+          </div>
+        </div>
+        
       </div>
+    </div>
 
 
       <br /><br />

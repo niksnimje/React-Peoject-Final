@@ -1,7 +1,35 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import { FiSearch } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 function Locations() {
+
+  const [search,setsearch]=useState("")
+  const navigate = useNavigate();
+
+
+  const WomensProduct = () => {
+    axios
+    .get('http://localhost:3000/women-product', {
+      params: {
+        q:search
+      },
+    })
+      .then((res) => (res.data))
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    WomensProduct();
+  }, [search]);
+
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/women?q=${search}`);
+  };
+
   return (
     <>
         <div className="store-locator-container d-flex flex-column align-items-center justify-content-around text-center">
@@ -21,8 +49,10 @@ function Locations() {
               className="form-control" 
               placeholder="Enter your search" 
               aria-label="Search"
+              onChange={(e)=>setsearch(e.target.value)}
+
             />
-             <button className="btn btn-outline-secondary" type="button">
+             <button onClick={handleSearchSubmit} className="btn btn-outline-secondary" type="button">
               <FiSearch />
             </button>
           </div>
