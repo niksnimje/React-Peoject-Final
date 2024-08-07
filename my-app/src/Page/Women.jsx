@@ -20,7 +20,7 @@ function Women() {
       .get('http://localhost:3000/women-product', {
         params: {
           _page: page,
-          _limit: 10,
+          _limit: 20,
           category: selectcategory || undefined,
           _sort: "price",
           _order: order,

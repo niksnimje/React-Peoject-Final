@@ -94,12 +94,17 @@ function Description() {
                 ))}
               </ul>
               <h4>Available Colors</h4>
-              <ul className='p-0' style={{ listStyle: "none" }}>
-                {product.colors.map((color, index) => (
-                  <li key={index}>{color}</li>
-                ))} <br />
-                <button className=' btn btn-primary'>Add To Bag</button>
-              </ul>
+<ul className='p-0' style={{ listStyle: "none" }}>
+  {Array.isArray(product.colors)
+    ? product.colors.map((color, index) => (
+        <li key={index}>{color}</li>
+      ))
+    : typeof product.colors === 'string'
+    ? product.colors.split(',').map((color, index) => (
+        <li key={index}>{color.trim()}</li>
+      ))
+    : null}
+</ul>
             </div>
           </div>
         </div>
