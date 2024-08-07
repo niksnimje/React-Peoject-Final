@@ -37,7 +37,7 @@ function NavbarCompo() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg" className="mb-5 position-sticky top-0 z-3">
+      <Navbar bg="light" expand="lg" className="mb-5 p-3 position-sticky top-0 z-3">
         <Container fluid className=' ms-0 ms-sm-1 ms-md-2 ms-lg-5 me-0  me-sm-1 me-md-2 me-lg-5'>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleShow} />
           <Nav className="me-auto d-none d-sm-none d-md-none d-lg-none d-xl-block " style={{width:"30%"}}>

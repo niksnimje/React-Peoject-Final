@@ -1,9 +1,19 @@
 import React from 'react'
 
 import './Css/Account.css';
-
+import { auth, provider } from '../FireBase/Firebas';
+import { signInWithPopup } from 'firebase/auth';
+import GoogleButton from 'react-google-button'
+import { Link } from 'react-router-dom';
 
 function Account() {
+
+  const hendelogin=()=>{
+    signInWithPopup(auth, provider)
+    .then((res)=>console.log(res))
+    .catch((err)=>console.log(err))
+  }
+
   return (
     <>
      <div className="container my-5">
@@ -25,12 +35,15 @@ function Account() {
               <a href="#" className="float-end">Forgot Password?</a>
             </div>
             <button type="submit" className="btn btn-primary w-100">Sign In</button>
+            <br /><br />
+            <GoogleButton onClick={hendelogin} />
           </form>
         </div>
         <div className="col-md-5">
           <h3 className="mb-3">New Customers</h3>
           <p>Create an account for faster checkout, order tracking, a birthday surprise & more!</p>
-          <button className="btn btn-outline-secondary w-100 mb-3">Create an Account</button>
+          <button className="btn btn-outline-secondary w-100 mb-3"><Link className='text-decoration-none text-black' to={"/createacount"}>Create an Account</Link> </button>
+
           <h3 className="mb-3">Track Your Order</h3>
           <form>
             <div className="form-group mb-3">

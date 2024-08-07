@@ -13,6 +13,7 @@ import Cart from '../Page/Cart';
 import Homepage from '../Page/Homepage';
 import Women from '../Page/Women';
 import Description from '../Components/Description';
+import CreateAccount from '../Page/CreateAccount';
 
 
 
@@ -32,6 +33,7 @@ function AllRouters() {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/locations" element={<Locations />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/createacount" element={<CreateAccount />} />
         <Route path="/cart" element={<Cart />} />
       </Routes> <br /><br /><br />
       <Fotter />
