@@ -75,7 +75,7 @@ function NavbarCompo() {
                   aria-label="Search"
                   onChange={(e)=>setsearch(e.target.value)}
                 />
-                <Button onClick={handleSearchSubmit}  variant="outline-success"><FaSearch /></Button>
+                <Button onClick={handleSearchSubmit} className='pt-0 pb-0'  variant="outline-success"><FaSearch /></Button>
               </Form>
               <Nav.Link as={NavLink} to="/wishlist"><FaRegHeart /></Nav.Link>
               <Nav.Link as={NavLink} to="/locations"><FaMapMarkerAlt /></Nav.Link>

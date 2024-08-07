@@ -56,21 +56,22 @@ function Women() {
           
           <div className="col-12 col-md-9 offset-md-3">
             <div className="row">
-              <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-                <div>
-                  <select name="" id="" className='select-main' onChange={(e) => setcategory(e.target.value)}>
-                    <option value="">Show Filters</option>
-                    <option value="Featured">Featured</option>
-                    <option value="Best">Best Seller</option>
-                    <option value="Newest">Newest</option>
-                  </select>
-                </div>
+            <div className="filter-container">
+  <div>
+    <select name="" id="" className="select-main" onChange={(e) => setcategory(e.target.value)}>
+      <option value="">Show Filters</option>
+      <option value="Featured">Featured</option>
+      <option value="Best">Best Seller</option>
+      <option value="Newest">Newest</option>
+    </select>
+  </div>
 
-                <div>
-                  <button onClick={() => setorder("desc")}>High To Low</button>
-                  <button onClick={() => setorder("asc")}>Low To High</button>
-                </div>
-              </div>
+  <div className="filter-buttons">
+    <button onClick={() => setorder("desc")}>High To Low</button>
+    <button onClick={() => setorder("asc")}>Low To High</button>
+  </div>
+</div>
+
               {womendata.map((el) => (
                 <div key={el.id} className="pt-5 col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
                   <Link to={`/description/${el.id}`}>
