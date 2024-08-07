@@ -1,5 +1,6 @@
 
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavbarCompo from './Components/NavbarCompo'
 import AllRouters from './Routers/AllRouters'
