@@ -1,14 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
 import { FaRegHeart, FaSearch, FaMapMarkerAlt, FaUser, FaShoppingCart } from "react-icons/fa";
 import { Navbar, Nav, Container, Form, FormControl, Button, Offcanvas, NavDropdown } from 'react-bootstrap';
-
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 function NavbarCompo() {
   const [show, setShow] = useState(false);
-
+  const [search,setsearch]=useState("")
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const navigate = useNavigate();
+  
+
+
+
+  const WomensProduct = () => {
+    axios
+    .get('http://localhost:3000/women-product', {
+      params: {
+        q:search
+      },
+    })
+      .then((res) => (res.data))
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    WomensProduct();
+  }, [search]);
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/women?q=${search}`);
+  };
 
   return (
     <>
@@ -42,21 +67,20 @@ function NavbarCompo() {
           <Navbar.Collapse id="basic-navbar-nav" className="d-none d-lg-block">
             
             <Nav className="ms-auto">
-              <Form className="d-flex me-3">
+              <Form className="d-flex me-3" onSubmit={handleSearchSubmit} >
                 <FormControl
                   type="search"
                   placeholder="Search"
                   className="me-2"
                   aria-label="Search"
+                  onChange={(e)=>setsearch(e.target.value)}
                 />
-                <Button variant="outline-success"><FaSearch /></Button>
+                <Button   variant="outline-success"><FaSearch /></Button>
               </Form>
               <Nav.Link as={NavLink} to="/wishlist"><FaRegHeart /></Nav.Link>
               <Nav.Link as={NavLink} to="/locations"><FaMapMarkerAlt /></Nav.Link>
               <Nav.Link as={NavLink} to="/account" className='account-hover'><FaUser />
               </Nav.Link>
-
-
 
               <Nav.Link as={NavLink} to="/cart"><FaShoppingCart /></Nav.Link>
             </Nav>
