@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Highlighted: useLocation for capturing query params
+import { Link, useLocation } from 'react-router-dom';
 import Sidebar from '../Components/Sidebar';
 import './Css/Women.css';
 
@@ -9,11 +9,12 @@ function Women() {
   const [page, setpage] = useState(1);
   const [order, setorder] = useState(null);
   const [selectcategory, setcategory] = useState(null);
-  const location = useLocation(); // Highlighted: useLocation hook
+  const [selectedColors, setSelectedColors] = useState([]);
+  const location = useLocation();
 
   const WomensProduct = () => {
-    const params = new URLSearchParams(location.search); // Highlighted: Parse URL search params
-    const searchQuery = params.get('q'); // Highlighted: Get the search query from URL
+    const params = new URLSearchParams(location.search);
+    const searchQuery = params.get('q');
 
     axios
       .get('http://localhost:3000/women-product', {
@@ -23,7 +24,8 @@ function Women() {
           category: selectcategory || undefined,
           _sort: "price",
           _order: order,
-          q: searchQuery || undefined, // Highlighted: Include search query in params
+          q: searchQuery || undefined,
+          colors: selectedColors.length > 0 ? selectedColors.join(',') : undefined
         },
       })
       .then((res) => setwomendata(res.data))
@@ -32,14 +34,24 @@ function Women() {
 
   useEffect(() => {
     WomensProduct();
-  }, [page, order, selectcategory, location.search]); // Highlighted: Add location.search as a dependency
+  }, [page, order, selectcategory, selectedColors, location.search]);
+
+  const handleFilterChange = (color, isChecked) => {
+    setSelectedColors((prevColors) => {
+      if (isChecked) {
+        return [...prevColors, color];
+      } else {
+        return prevColors.filter((c) => c !== color);
+      }
+    });
+  };
 
   return (
     <>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-md-3">
-            <Sidebar />
+            <Sidebar onFilterChange={handleFilterChange} />
           </div>
           
           <div className="col-12 col-md-9 offset-md-3">
@@ -61,7 +73,7 @@ function Women() {
               </div>
               {womendata.map((el) => (
                 <div key={el.id} className="pt-5 col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                  <Link to={`/description/${el.id}`}> {/* Fixed template string syntax */}
+                  <Link to={`/description/${el.id}`}>
                     <img src={el.img} alt={el.title} className="img-fluid" />
                   </Link>
                   <h5>{el.title}</h5>
@@ -70,7 +82,7 @@ function Women() {
               ))}
             </div>
             <div className="btn-class text-center">
-              <button className='btn btn-primary' disabled={page === 0} onClick={() => setpage(page - 1)}>Prev</button>
+              <button className='btn btn-primary' disabled={page === 1} onClick={() => setpage(page - 1)}>Prev</button>
               <span>{page}</span>
               <button className='btn btn-primary' disabled={womendata.length < 10} onClick={() => setpage(page + 1)}>Next</button>
             </div>

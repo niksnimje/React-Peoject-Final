@@ -11,7 +11,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors":  "White",
             "category":"Featured"
         },
         {
@@ -271,7 +271,7 @@
             "description": "A stylish graphic cami featuring Hello Kitty. Perfect for casual wear.",
             "details": "Material: 100% Cotton. Machine washable. Imported.",
             "sizes": ["XS", "S", "M", "L", "XL"],
-            "colors": ["Black", "White"],
+            "colors": "Green",
             "catagory":"Newest"
         },
         {
