@@ -4,7 +4,10 @@ import './Css/Account.css';
 import { auth, provider } from '../FireBase/Firebas';
 import { signInWithPopup } from 'firebase/auth';
 import GoogleButton from 'react-google-button'
+import FacebookLogin from 'react-facebook-login';
+
 import { Link } from 'react-router-dom';
+
 
 function Account() {
 
@@ -36,7 +39,10 @@ function Account() {
             </div>
             <button type="submit" className="btn btn-primary w-100">Sign In</button>
             <br /><br />
-            <GoogleButton onClick={hendelogin} />
+            <GoogleButton onClick={hendelogin}  />
+            <br />
+            <FacebookLogin onClick={hendelogin}  />
+
           </form>
         </div>
         <div className="col-md-5">
