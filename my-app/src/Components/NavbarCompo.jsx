@@ -67,7 +67,7 @@ function NavbarCompo() {
           <Navbar.Collapse id="basic-navbar-nav" className="d-none d-lg-block">
             
             <Nav className="ms-auto">
-              <Form className="d-flex me-3" onSubmit={handleSearchSubmit} >
+              <Form className="d-flex me-3" onSubmit={handleSearchSubmit}>
                 <FormControl
                   type="search"
                   placeholder="Search"
@@ -75,7 +75,7 @@ function NavbarCompo() {
                   aria-label="Search"
                   onChange={(e)=>setsearch(e.target.value)}
                 />
-                <Button   variant="outline-success"><FaSearch /></Button>
+                <Button onClick={handleSearchSubmit}  variant="outline-success"><FaSearch /></Button>
               </Form>
               <Nav.Link as={NavLink} to="/wishlist"><FaRegHeart /></Nav.Link>
               <Nav.Link as={NavLink} to="/locations"><FaMapMarkerAlt /></Nav.Link>
