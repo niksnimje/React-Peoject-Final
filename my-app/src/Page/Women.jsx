@@ -59,8 +59,11 @@ function Women() {
     if (!isPhone) {
       if (main.style.marginLeft === "0%") {
         main.style.marginLeft = "-20%";
+        main.style.transition="all 0.3s ease-in"
       } else {
         main.style.marginLeft = "0%";
+        main.style.transition="all 0.3s ease-in"
+
       }
     }
   };
