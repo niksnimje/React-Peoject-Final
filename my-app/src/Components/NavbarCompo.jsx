@@ -38,7 +38,7 @@ function NavbarCompo() {
   return (
     <>
       <Navbar bg="light" expand="lg" className="mb-5 p-3 position-sticky top-0 z-3">
-        <Container fluid className=' ms-0 ms-sm-1 ms-md-2 ms-lg-5 me-0  me-sm-1 me-md-2 me-lg-5'>
+        <Container fluid className=' ms-0 ms-sm-1 ms-md-2 ms-lg-5 me-0  me-sm-1 me-md-2 me-lg-5 p-0'>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleShow} />
           <Nav className="me-auto d-none d-sm-none d-md-none d-lg-none d-xl-block " style={{width:"30%"}}>
               <div className='d-flex'><Nav.Link as={NavLink} to="/women" className='Women_Hov'>Women</Nav.Link>
@@ -75,7 +75,7 @@ function NavbarCompo() {
                   aria-label="Search"
                   onChange={(e)=>setsearch(e.target.value)}
                 />
-                <Button onClick={handleSearchSubmit} className='pt-0 pb-0'  variant="outline-success"><FaSearch /></Button>
+                {/* <Button onClick={handleSearchSubmit} className='pt-0 pb-0'  variant="outline-success"><FaSearch /></Button> */}
               </Form>
               <Nav.Link as={NavLink} to="/wishlist"><FaRegHeart /></Nav.Link>
               <Nav.Link as={NavLink} to="/locations"><FaMapMarkerAlt /></Nav.Link>
