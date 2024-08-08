@@ -6,7 +6,7 @@ import { FaMapMarkerAlt, FaClipboardList, FaRedo, FaGift, FaCommentDots, FaPhone
 
 function Footer() {
   return (
-    <footer className="bg-light pt-5 pb-3">
+    <footer className="bg-light pt-5 pb-3 ">
       <Container>
         <Row>
           <Col md={3}>

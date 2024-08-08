@@ -66,15 +66,15 @@ function Women() {
 
   return (
     <>
-      <div className="container-fluid">
-        <div className="row" >
+      <div className="container-fluid ">
+        <div className="row w-75 m-auto gap-0" >
           <div className="col-12 col-md-9 offset-md-3">
-            <div className="row  pe-0 pe-sm-1 pe-md-2 pe-lg-5 justify-content-between align-content-center align-items-center flex-wrap " id='main-product-row' >
-              <div className="filter-container flex-wrap">
+            <div className="row  pe-0 pe-sm-1 pe-md-2 pe-lg-5 justify-content-around align-content-center align-items-center flex-wrap " id='main-product-row' >
+              <div className="filter-container flex-wrap mb-0">
               <div className="col-10 col-md-1 d-none d-sm-none d-md-none d-lg-block">
             {isSidebarVisible && <Sidebar onFilterChange={handleFilterChange} />}
             <button onClick={toggleSidebar}>
-              {isSidebarVisible ? 'Hide Sidebar' : 'Hit Me'}
+              {isSidebarVisible ? 'Close Filter' : 'Show Filter'}
             </button>
           </div>
                 <div>
