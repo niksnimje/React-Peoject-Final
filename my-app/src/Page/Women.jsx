@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import Sidebar from '../Components/Sidebar';
 import './Css/Women.css';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { IoMdSwitch } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 
 function Women() {
@@ -71,10 +73,11 @@ function Women() {
           <div className="col-12 col-md-9 offset-md-3">
             <div className="row  pe-0 pe-sm-1 pe-md-2 pe-lg-5 justify-content-around align-content-center align-items-center flex-wrap " id='main-product-row' >
               <div className="filter-container flex-wrap mb-0">
-              <div className="col-10 col-md-1 d-none d-sm-none d-md-none d-lg-block">
+              <div className="col-10 col-md-2 d-none d-sm-none d-md-none d-lg-block">
             {isSidebarVisible && <Sidebar onFilterChange={handleFilterChange} />}
-            <button onClick={toggleSidebar}>
-              {isSidebarVisible ? 'Close Filter' : 'Show Filter'}
+            <button className='show-filter-btn' onClick={toggleSidebar}>
+              {isSidebarVisible ? <IoMdClose /> :  <IoMdSwitch />}
+              {isSidebarVisible ? 'Close Filter' :  'Show Filter'}
             </button>
           </div>
                 <div>

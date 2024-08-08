@@ -24,7 +24,9 @@ function Sidebar({ onFilterChange }) {
           <li className="color-option"><input type="checkbox" value="Brown" onChange={handleCheckboxChange} /> <span className="color-box brown"></span> Brown</li>
           <li className="color-option"><input type="checkbox" value="Green" onChange={handleCheckboxChange} /> <span className="color-box green"></span> Green</li>
           <li className="color-option"><input type="checkbox" value="White" onChange={handleCheckboxChange} /> <span className="color-box white"></span> White</li>
+          
         </ul>
+       
       </div>
     </div>
   );
