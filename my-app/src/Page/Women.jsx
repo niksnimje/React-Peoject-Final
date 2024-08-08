@@ -51,17 +51,19 @@ function Women() {
 
   const toggleSidebar = () => {
     setSidebarVisible(!isSidebarVisible);
+    const main=document.getElementById("main-product-row")
+    main.style.marginLeft="0%";
+
   };
 
   return (
     <>
       <div className="container-fluid">
-        <div className="row">
+        <div className="row" >
           <div className="col-12 col-md-9 offset-md-3">
-            <div className="row pe-0 pe-sm-1 pe-md-2 pe-lg-5 justify-content-between align-content-center align-items-center flex-wrap ">
-            
+            <div className="row  pe-0 pe-sm-1 pe-md-2 pe-lg-5 justify-content-between align-content-center align-items-center flex-wrap " id='main-product-row' style={{marginLeft:"-20%"}}>
               <div className="filter-container flex-wrap">
-              <div className="col-12 col-md-3 d-none d-sm-none d-md-none d-lg-block">
+              <div className="col-10 col-md-1 d-none d-sm-none d-md-none d-lg-block">
             {isSidebarVisible && <Sidebar onFilterChange={handleFilterChange} />}
             <button onClick={toggleSidebar}>
               {isSidebarVisible ? 'Hide Sidebar' : 'Hit Me'}
