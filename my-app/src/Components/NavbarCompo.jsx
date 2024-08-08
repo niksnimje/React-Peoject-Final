@@ -62,8 +62,19 @@ function NavbarCompo() {
             </svg>
           </Navbar.Brand>
           <Nav className="ms-auto d-lg-none">
-            <Nav.Link as={NavLink} to="/cart"><FaShoppingCart /></Nav.Link>
+            <Nav.Link as={NavLink} to="/cart"><FaShoppingCart /></Nav.Link> <br />
+            
           </Nav>
+          <Form className="d-flex me-0 d-block d-sm-block d-md-none d-lg-none w-100" onSubmit={handleSearchSubmit}>
+                <FormControl
+                  type="search"
+                  placeholder="Search"
+                  className="me-0 "
+                  aria-label="Search"
+                  onChange={(e)=>setsearch(e.target.value)}
+                />
+                {/* <Button onClick={handleSearchSubmit} className='pt-0 pb-0'  variant="outline-success"><FaSearch /></Button> */}
+              </Form>
           <Navbar.Collapse id="basic-navbar-nav" className="d-none d-lg-block">
             
             <Nav className="ms-auto">
