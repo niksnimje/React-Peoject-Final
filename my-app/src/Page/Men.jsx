@@ -1,92 +1,167 @@
-import React, { useEffect, useState } from 'react';
-import './Css/Men.css';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Sidebar from '../Components/Sidebar';
-import { Link } from 'react-router-dom';
+import './Css/Women.css';
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { IoMdSwitch } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 
 function Men() {
-
-  const [mendata, setmendata] = useState([]);
+  const [womendata, setwomendata] = useState([]);
   const [page, setpage] = useState(1);
+  const [order, setorder] = useState(null);
+  const [selectcategory, setcategory] = useState(null);
+  const [selectedColors, setSelectedColors] = useState([]);
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
+  const location = useLocation();
 
-  const MensProduct = () => {
+  const WomensProduct = () => {
+    const params = new URLSearchParams(location.search);
+    const searchQuery = params.get('q');
+
     axios
-      .get(`http://localhost:3000/men-product?_page=${page}&_per_page=12`)
-      .then((res) => setmendata(res.data))
+      .get('http://localhost:3000/men-product', {
+        params: {
+          _page: page,
+          _limit: 20,
+          category: selectcategory || undefined,
+          _sort: "price",
+          _order: order,
+          q: searchQuery || undefined,
+          colors: selectedColors.length > 0 ? selectedColors.join(',') : undefined
+        },
+      })
+      .then((res) => setwomendata(res.data))
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
-    MensProduct();
-  }, [page]);
+    WomensProduct();
+  }, [page, order, selectcategory, selectedColors, location.search]);
 
+  const handleFilterChange = (color, isChecked) => {
+    setSelectedColors((prevColors) => {
+      if (isChecked) {
+        return [...prevColors, color];
+      } else {
+        return prevColors.filter((c) => c !== color);
+      }
+    });
+  };
+
+  const toggleSidebar = () => {
+    setSidebarVisible(!isSidebarVisible);
+    const main = document.getElementById("main-product-row");
+    const isPhone = window.innerWidth < 768; // Adjust based on your breakpoints
+
+    if (!isPhone) {
+      if (main.style.marginLeft === "0%") {
+        main.style.marginLeft = "-20%";
+      } else {
+        main.style.marginLeft = "0%";
+      }
+    }
+  };
+  
 
   return (
     <>
-
-<div className="container-fluid">
-        <div className="row">
-          <div className="col-12 col-md-3">
-            <Sidebar />
-          </div>
+      <div className="container-fluid ">
+        <div className="row w-75 m-auto gap-0" >
           <div className="col-12 col-md-9 offset-md-3">
-            <div className="row">
-              {mendata.map((el) => (
-                <div key={el.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                   <Link to={`/description/${el.id}`}>
+            <div className="row  pe-0 pe-sm-1 pe-md-2 pe-lg-5 justify-content-around align-content-center align-items-center flex-wrap " id='main-product-row' >
+              <div className="filter-container flex-wrap mb-0">
+              <div className="col-10 col-md-2 d-none d-sm-none d-md-none d-lg-block">
+            {isSidebarVisible && <Sidebar onFilterChange={handleFilterChange} />}
+            <button className='show-filter-btn' onClick={toggleSidebar}>
+              {isSidebarVisible ? <IoMdClose /> :  <IoMdSwitch />}
+              {isSidebarVisible ? 'Close Filter' :  'Show Filter'}
+            </button>
+          </div>
+                <div>
+                  <select
+                    name=""
+                    id=""
+                    className="select-main"
+                    onChange={(e) => setcategory(e.target.value)}
+                  >
+                    <option value="">Show Filters</option>
+                    <option value="Featured">Featured</option>
+                    <option value="Best">Best Seller</option>
+                    <option value="Newest">Newest</option>
+                  </select>
+                </div>
+
+                <div className="filter-buttons mt-4 mt-sm-0">
+                  <button onClick={() => setorder("desc")}>High To Low</button>
+                  <button onClick={() => setorder("asc")}>Low To High</button>
+                </div>
+              </div>
+
+              {womendata.map((el) => (
+                <div
+                  key={el.id}
+                  className="pt-5 col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-start"
+                >
+                  <Link to={`/description/${el.id}`}>
                     <img src={el.img} alt={el.title} className="img-fluid" />
                   </Link>
-                  <h5>{el.title}</h5>
-                  <p>${el.price}</p>
+
+                  <div className="row justify-content-between align-content-center align-items-center">
+                    <div className="col-10">
+                      <p
+                        className="mb-0"
+                        style={{
+                          color: "#CC1632",
+                          fontWeight: "700",
+                          fontSize: "12px",
+                        }}
+                      >
+                        {el.mini}
+                      </p>
+                      <h6>{el.title}</h6>
+                      <span style={{ fontWeight: "400" }}>${el.price}</span>{" "}
+                      <span
+                        style={{
+                          fontWeight: "400",
+                          color: "#A6A8A6",
+                          fontSize: "14px",
+                        }}
+                      >
+                        Comp.Vlaue ${el.comp}
+                      </span>
+                    </div>
+                    <div className="col-2">
+                      <HiOutlineShoppingBag className="hov-icon" />
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
-             <div className="btn-class text-center">
-             <button className='btn btn-primary '  onClick={()=>setpage(page-1)}>Prev</button>
+            <div className="btn-class text-center">
+              <button
+                className="btn btn-primary"
+                disabled={page === 1}
+                onClick={() => setpage(page - 1)}
+              >
+                Prev
+              </button>
               <span>{page}</span>
-              <button className='btn btn-primary' onClick={()=>setpage(page+1)}>Next</button>
-             </div>
+              <button
+                className="btn btn-primary"
+                disabled={womendata.length < 10}
+                onClick={() => setpage(page + 1)}
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-
-
-    <div className="container my-5">
-      <div className="row">
-        <div className="col-md-6">
-          <h2>The Latest In Guys' Clothes</h2>
-          <p>
-            Our selection of teen men's clothes have all you need to stay on-trend for school, work and play. Explore our staple clothes for teenage guys to form your look.
-          </p>
-          <ul>
-            <li>
-              <strong>Guys' Shirts:</strong> No matter where the day takes you, be ready for whatever comes next with Aéropostale's teen's tops and shirts. Count on our <a href="#">teen guys' tops</a> selection for the graphic tees, hoodies, shirts and polos you need to build trendy outfits for guys. Find that just-right tee to match your new joggers, or dress things up a bit with chinos and a new button-down or polo.
-            </li>
-            <li>
-              <strong>Teen Boy's Pants and Shorts:</strong> Browse our <a href="#">guys' bottoms</a> to find teen boys' clothing must-haves, including jeans, joggers, shorts and sweats. Mix and match your favorite pants with our men's and teen guys' tops to create a stylish fit for you, all the time. When things heat up in the warmer months, transition into shorts and swimwear to keep your style cool and relaxed.
-            </li>
-            <li>
-              <strong>Men's Outerwear:</strong> Get out and about in this season's jackets, coats and vests. Layer up in an active jacket with water-resistant fabric designed to keep you dry. For an edgy vibe that looks good any time of year, go for a denim trucker jacket in a perfectly faded light wash with subtle distressed whiskering. Lighter guy jackets like our windbreakers protect you from the elements without adding bulk, perfect for chilly spring or fall days.
-            </li>
-            <li>
-              <strong>Teen Guy's Accessories:</strong> The right <a href="#">guys' accessories</a> should be simple yet pack an eye-catching style punch. Complete your outfits for teenage guys with hats and caps, sunglasses and socks, then shop our <a href="#">men's cologne</a> and grooming products for the crucial finishing touch. For cold weather, trade in your baseball cap for a beanie and a matching scarf in a trendy color or pattern.
-            </li>
-          </ul>
-        </div>
-        <div className="col-md-6">
-          <h5>Need a new on-trend look?</h5>
-          <p>The collection of boys' clothes at Aéropostale brings you the latest styles made with high-quality materials for fresh outfits for teenage guys and young men. Comfy, stylish and bursting with vibrant prints and cool colors, Aero has teen boys' clothing to keep you looking your best for every activity.</p>
-          <h5>Up Your Style Game With Trendy Outfits For Guys</h5>
-          <p>Put together a variety of outfits to complete your chill, laidback vibe. Start with new bottoms like jeans and joggers, then add a mix of graphic tees and hoodies to go with your fashion sneakers. For casual outings, you can't go wrong with <a href="#">super-soft teen guys' activewear</a> like utility shorts, colorblock tees, fleece sweatpants and track pants.</p>
-          <h5>Go-To Clothes For Teenage Guys</h5>
-          <p>From the season's latest looks to timeless classics, our selection of trendy teen boy clothes is made to let you shine. Check out our <a href="#">guys' new arrivals</a> for the latest in men's trendy clothing when your look needs a refresh, or browse our <a href="#">guys' clearance</a> section for teen boy's clothing at deep-discount prices. Whether you're looking for a full outfit or a finishing touch, Aéropostale is your top choice for teens and young guys.</p>
-        </div>
-      </div>
-    </div>
     </>
-  )
+  );
 }
 
-export default Men
+export default Men;
